@@ -1,0 +1,13 @@
+/* Progress Bars Demo */
+
+Used bootstrap, NodeJS, Grunt, Bower, Less Compiler, Qunit, Git.
+
+* Multiple progress bars
+
+* Can't go under 0
+
+* Can go over 100, but limit the bar itself and change its colour
+
+* Responsive design (desktop/mobile/tablet)
+
+* Animate when bar change

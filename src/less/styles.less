@@ -1,0 +1,42 @@
+@import "../../bower_components/bootstrap/less/variables";
+//custom variables
+@import "variables.less";
+h1{
+  font-size: @font-size-h1;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+.item-spacer{
+  margin: 100px 0;
+  @media(max-width: @screen-xs-max){
+    margin: 50px 0;
+  }
+}
+.progress-container{
+  padding: 20px;
+  background-color: #d3d3d3;
+  .progress{
+    height: 35px;
+    .progress-bar{
+      line-height: 32px;
+      text-align: center;
+      .overlay{
+        color: #000;
+        font-size: 14px;
+        position: absolute;
+        left: 46%;
+      }
+    }
+  }
+  .progress-changer{
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 35px;
+  }
+  .btn{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin: 7px 0 10px 5px;
+    border:1px solid rgb(169,169,169);
+  }
+}

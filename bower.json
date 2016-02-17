@@ -1,0 +1,13 @@
+{
+  "name": "progress-bar-demo",
+  "description": "Progress bar",
+  "version": "1.0.0",  
+  "license": "All rights reserved",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11",
+    "bootstrap": "~3.3.5",
+    "respond": "~1.4.2",
+    "html5shiv": "~3.7.3"
+  }
+}

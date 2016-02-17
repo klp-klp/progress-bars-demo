@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Progress Bars Demo</title>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="item-spacer clearfix"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-6">
+            <div class="progress-container">
+                <h1>Progress Bars Demo</h1>
+
+                <div class="progress active">
+                    <div class="progress-bar" id="progress-bar1" role="progressbar" aria-valuenow="0" aria-valuemin="-10000" aria-valuemax="10000" style="width: 0%">
+                        <span class="overlay"></span>
+                    </div>
+                </div>
+
+                <div class="progress active">
+                    <div class="progress-bar" id="progress-bar2" role="progressbar" aria-valuenow="0" aria-valuemin="-10000" aria-valuemax="10000" style="width: 0%">
+                        <span class="overlay"></span>
+                    </div>
+                </div>
+
+                <div class="progress active">
+                    <div class="progress-bar" id="progress-bar3" role="progressbar" aria-valuenow="0" aria-valuemin="-10000" aria-valuemax="10000" style="width: 0%">
+                        <span class="overlay"></span>
+                    </div>
+                </div>
+
+                <div class="progress-options">
+                    <select class="progress-changer">
+                        <option value="1" selected="selected">#progress1</option>
+                        <option value="2">#progress2</option>
+                        <option value="3">#progress3</option>
+                    </select>
+                    <button id="btn1" type="button" class="btn">-25</button>
+                    <button id="btn2" type="button" class="btn ">-10</button>
+                    <button id="btn3" type="button" class="btn ">+10</button>
+                    <button id="btn4" type="button" class="btn ">+25</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="item-spacer clearfix"></div>
+
+
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script src="../bower_components/qunit/qunit/qunit.js"></script>
+
+<!-- test case snippet: it will be different for any unit test -->
+<script>
+    test( "change color to red for progress bar 1 when the progress indicator crosses 100", function() {
+     bindProgressIndicatorWithNumber(110,'#progress-bar1');
+        equal("110%", $('#progress-bar1 .overlay').html());
+    });
+    test( "test for progress bar 3 when the value is less than 0", function() {
+     bindProgressIndicatorWithNumber(-10, '#progress-bar3');
+        equal("0%",$('#progress-bar3 .overlay').html());
+
+    });
+</script>
+
+
+
+</body>
+</html>

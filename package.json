@@ -1,0 +1,26 @@
+{
+  "name": "progress-bar-demo",
+  "version": "1.0.0",
+  "description": "Progress Bar Demo",
+  "author": "KLP",
+  "license": "All rights reserved",
+  "scripts": {
+    "install": "bower install"
+  },
+  "dependencies": {
+    "bower": "~1.6.5",
+    "grunt-contrib-less": "~1.0.1",
+    "grunt-cli": "~0.1.13",
+    "grunt": "~0.4.5",
+    "grunt-contrib-compress": "~0.14.0",
+    "grunt-concurrent": "~2.0.3",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-bootlint": "~0.9.1",
+    "grunt-htmllint": "~0.2.7",
+    "grunt-contrib-jshint": "~0.11.3",
+    "grunt-lesslint": "~1.4.1"
+  },
+  "devDependencies": {
+    "qunitjs": "^1.21.0"
+  }
+}
